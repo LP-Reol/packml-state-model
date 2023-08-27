@@ -5,6 +5,10 @@
   "license": "ISC",
   "module": "src/index.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LP-Reol/packml-state-model"
+  },
   "scripts": {
     "test": "vitest"
   },
