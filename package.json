@@ -2,7 +2,6 @@
   "name": "packml-state-model",
   "version": "0.1.2",
   "description": "PackML state model",
-  "license": "ISC",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -13,26 +12,32 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LP-Reol/packml-state-model"
-  },
   "scripts": {
     "build-fast": "tsup src/index.ts --format cjs,esm",
     "build": "bun run build-fast --dts-resolve",
     "release": "bumpp --commit --push --tag && npm publish",
     "prepublishOnly": "bun run build",
-    "test": "vitest"
+    "test": "bun test"
   },
   "files": [
     "dist"
   ],
+  "keywords": [
+    "bun",
+    "omac",
+    "packml"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/LP-Reol/packml-state-model#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LP-Reol/packml-state-model.git"
+  },
+  "bugs": "https://github.com/LP-Reol/packml-state-model/issues",
   "devDependencies": {
-    "bumpp": "^9.2.0",
-    "bun-types": "latest",
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.3"
+    "bumpp": "^9.1.1",
+    "bun-types": "^0.6.9",
+    "tsup": "^7.0.0",
+    "typescript": "^5.1.3"
   }
 }

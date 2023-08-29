@@ -1,5 +1,5 @@
-import {State} from "./States.ts"
-import {Signal} from "./Signals.ts"
+import {State} from "./States"
+import {Signal} from "./Signals"
 
 export const Transitions = new Map<State, Map<Signal, State>>([
     [State.Aborted, new Map([

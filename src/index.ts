@@ -1,6 +1,6 @@
-import {Signal} from "./Signals.ts";
-import {Transitions} from "./Transitions.ts";
-import {ActingStates, State, WaitingStates} from "./States.ts";
+import {Signal} from "./Signals";
+import {Transitions} from "./Transitions";
+import {ActingStates, State, WaitingStates} from "./States";
 
 export {
     Signal,
